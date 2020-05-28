@@ -1,11 +1,19 @@
-from flask import Flask
+from flask import Flask, render_template, session
 
 app = Flask(__name__)
+app.secret_key = 'sdafasjfsfksafsdafsad23583094'
+
+
+@app.route("/pagina")
+def pagina():
+    session['nome'] = 'Juca'
+    return render_template('base.html')
+# enddef
 
 
 @app.route('/')
 def hello_world():
-    variavel = " a vaca "
+    variavel = " a vaca " + 'asdas'
     i = 0;
     while(i < 10 ):
         variavel = variavel + "ola"
