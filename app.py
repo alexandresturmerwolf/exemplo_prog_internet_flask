@@ -11,6 +11,12 @@ def pagina():
 # enddef
 
 
+@app.route("/cadastro")
+def cadastro():
+    return render_template('cadastro.html')
+# enddef
+
+
 @app.route('/')
 def hello_world():
     variavel = " a vaca " + 'asdas'

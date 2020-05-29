@@ -5,6 +5,29 @@
     <title>Title</title>
 </head>
 <body>
+
+   isso e mostrado para todos no incio
+
+   {% block parte_cima %}
+
+       <br/>esta e a parte de cima
+
+   {% endblock %}
+
+    <br/>aqui e comum
+
+   {% block parte_meio %}
+
+       <br/>esta e a parte do meio
+
+   {% endblock %}
+
+   <br/>aqui e comum
+
+   {% block parte_baixo %}
+         <br/>esta e a parte de baixo
+   {% endblock %}
+
    A vaca morreu do template chamando o {{session['nome'] }}
 </body>
 </html>
